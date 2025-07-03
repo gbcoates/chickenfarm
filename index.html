@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cluck Valley Farms</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Rubik Mono One', sans-serif;
+      background-color: #fdf7f2;
+      color: #2d2d2d;
+      overflow-x: hidden;
+    }
+
+    header {
+      background-image: url('https://images.unsplash.com/photo-1587213811864-8f3e996aa98d');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      padding: 0 20px;
+    }
+
+    header h1 {
+      font-size: 4rem;
+      text-shadow: 3px 3px #000;
+    }
+
+    header p {
+      font-size: 1.5rem;
+      margin-top: 20px;
+      text-shadow: 2px 2px #000;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #c62828;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background: #2d2d2d;
+      color: #fff;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    a {
+      color: #ffc107;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    nav {
+      background-color: #fff;
+      padding: 10px 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+
+    nav a {
+      margin: 0 15px;
+      font-size: 1rem;
+    }
+
+    .livestream {
+      position: relative;
+      padding-top: 56.25%; /* 16:9 Aspect Ratio */
+      height: 0;
+      overflow: hidden;
+    }
+
+    .livestream iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#livestream">Livestream</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <h1>Cluck Valley Farms</h1>
+    <p>Home of the happiest chickens this side of the coop.</p>
+  </header>
+
+  <section id="about">
+    <h2>About Our Farm</h2>
+    <p>
+      At Cluck Valley Farms, our chickens roam free, eat well, and cluck loud. We believe in sustainable, ethical chicken-raising with plenty of sunshine and sass.
+    </p>
+  </section>
+
+  <section id="gallery">
+    <h2>Meet the Flock</h2>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1615746347335-719ba09a69b1" alt="Chicken 1">
+      <img src="https://images.unsplash.com/photo-1624377632082-e71ae1f9b6eb" alt="Chicken 2">
+      <img src="https://images.unsplash.com/photo-1558804158-51aa1b26b51e" alt="Chicken 3">
+    </div>
+  </section>
+
+  <section id="livestream">
+    <h2>Live from the Coop</h2>
+    <p>Watch our chickens in real-time. It’s more entertaining than you think!</p>
+    <div class="livestream">
+      <!-- Replace the src URL below with your live stream embed link (YouTube, Vimeo, or other) -->
+      <iframe src="https://www.youtube.com/embed/live_stream?channel=YOUR_CHANNEL_ID" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Get in Touch</h2>
+    <p>Email us at <a href="mailto:cluckvalley@example.com">cluckvalley@example.com</a></p>
+    <p>Follow us on <a href="#">Instagram</a> for daily cluck-ins!</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Cluck Valley Farms. All rights reserved.</p>
+  </footer>
+</body>
+</html>
